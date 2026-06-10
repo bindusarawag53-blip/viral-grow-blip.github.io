@@ -343,9 +343,11 @@
                     <h3>Likes</h3>
                     <p>Instagram, Facebook, Twitter, YouTube, Telegram</p>
                 </div>
-                <div class="price-row"><span class="qty">100 Likes</span><span class="price">Rs 20</span></div>
-                <div class="price-row"><span class="qty">500 Likes</span><span class="price">Rs 70</span></div>
-                <div class="price-row featured"><span class="qty">1000 Likes</span><span class="price">Rs 150</span></div>
+                <div class="price-row"><span class="qty">5 Likes</span><span class="price">Rs free</span></div>
+                <div class="price-row"><span class="qty">100 Likes</span><span class="price">Rs 30</span></div>
+                <div class="price-row"><span class="qty">500 Likes</span><span class="price">Rs 99</span></div>
+                <div class="price-row"><span class="qty">1000 Likes</span><span class="price">Rs 199</span></div>
+                <div class="price-row featured"><span class="qty">10000 Likes</span><span class="price">Rs 600</span></div>
                 <button class="btn btn-primary order-btn" onclick="openOrderModal('likes')"><i class="fas fa-shopping-cart"></i> Order Now</button>
             </div>
             <div class="pricing-card comments fade-in">
@@ -354,9 +356,11 @@
                     <h3>Comments</h3>
                     <p>Instagram, Facebook, Twitter, YouTube, Telegram</p>
                 </div>
-                <div class="price-row"><span class="qty">100 Comments</span><span class="price">Rs 20</span></div>
-                <div class="price-row"><span class="qty">500 Comments</span><span class="price">Rs 80</span></div>
-                <div class="price-row featured"><span class="qty">1000 Comments</span><span class="price">Rs 199</span></div>
+                <div class="price-row"><span class="qty">5 Comments</span><span class="price">Rs free</span></div>
+                <div class="price-row"><span class="qty">100 Comments</span><span class="price">Rs 30</span></div>
+                <div class="price-row"><span class="qty">500 Comments</span><span class="price">Rs 99</span></div>
+                <div class="price-row"><span class="qty">1000 Comments</span><span class="price">Rs 199</span></div>
+                <div class="price-row featured"><span class="qty">10000 Comments</span><span class="price">Rs 700</span></div>
                 <button class="btn btn-primary order-btn" onclick="openOrderModal('comments')"><i class="fas fa-shopping-cart"></i> Order Now</button>
             </div>
             <div class="pricing-card followers featured fade-in">
@@ -365,9 +369,11 @@
                     <h3>Followers</h3>
                     <p>Instagram, Facebook, Twitter, YouTube, Telegram</p>
                 </div>
+                <div class="price-row"><span class="qty">5 Followers</span><span class="price">Rs free</span></div>
                 <div class="price-row"><span class="qty">100 Followers</span><span class="price">Rs 30</span></div>
-                <div class="price-row"><span class="qty">500 Followers</span><span class="price">Rs 150</span></div>
-                <div class="price-row featured"><span class="qty">1000 Followers</span><span class="price">Rs 300</span></div>
+                <div class="price-row"><span class="qty">500 Followers</span><span class="price">Rs 110</span></div>
+                <div class="price-row"><span class="qty">1000 Followers</span><span class="price">Rs 250</span></div>
+                <div class="price-row featured"><span class="qty">10000 Followers</span><span class="price">Rs 900</span></div>
                 <button class="btn btn-primary order-btn" onclick="openOrderModal('followers')"><i class="fas fa-shopping-cart"></i> Order Now</button>
             </div>
             <div class="pricing-card views fade-in">
@@ -378,7 +384,9 @@
                 </div>
                 <div class="price-row"><span class="qty">100 Views</span><span class="price">Rs 10</span></div>
                 <div class="price-row"><span class="qty">500 Views</span><span class="price">Rs 30</span></div>
-                <div class="price-row featured"><span class="qty">1000 Views</span><span class="price">Rs 50</span></div>
+                <div class="price-row"><span class="qty">1000 Views</span><span class="price">Rs 50</span></div>
+                <div class="price-row"><span class="qty">10000 Views</span><span class="price">Rs 200</span></div>
+                <div class="price-row featured"><span class="qty">1M Views</span><span class="price">Rs 500</span></div>
                 <button class="btn btn-primary order-btn" onclick="openOrderModal('views')"><i class="fas fa-shopping-cart"></i> Order Now</button>
             </div>
         </div>
@@ -535,18 +543,26 @@
                 <label>Select Service</label>
                 <select id="orderService" onchange="updatePrice()">
                     <option value="">-- Select Service --</option>
-                    <option value="likes_100" data-price="20">Likes - 100 (Rs 20)</option>
-                    <option value="likes_500" data-price="70">Likes - 500 (Rs 70)</option>
-                    <option value="likes_1000" data-price="150">Likes - 1000 (Rs 150)</option>
-                    <option value="comments_100" data-price="20">Comments - 100 (Rs 20)</option>
-                    <option value="comments_500" data-price="80">Comments - 500 (Rs 80)</option>
+                    <option value="likes_5" data-price="free">Likes - 5 (free)</option>
+                    <option value="likes_100" data-price="30">Likes - 100 (Rs 30)</option>
+                    <option value="likes_500" data-price="99">Likes - 500 (Rs 99)</option>
+                    <option value="likes_1000" data-price="199">Likes - 1000 (Rs 199)</option>
+                    <option value="likes_10000" data-price="600">Likes - 10000 (Rs 600)</option>
+                    <option value="comments_5" data-price="free">Comments - 5 (free)</option>
+                    <option value="comments_100" data-price="30">Comments - 100 (Rs 30)</option>
+                    <option value="comments_500" data-price="99">Comments - 500 (Rs 99)</option>
                     <option value="comments_1000" data-price="199">Comments - 1000 (Rs 199)</option>
+                    <option value="comments_10000" data-price="700">Comments - 10000 (Rs 700)</option>
+                    <option value="followers_5" data-price="free">Followers - 5 (free)</option>
                     <option value="followers_100" data-price="30">Followers - 100 (Rs 30)</option>
-                    <option value="followers_500" data-price="150">Followers - 500 (Rs 150)</option>
-                    <option value="followers_1000" data-price="300">Followers - 1000 (Rs 300)</option>
+                    <option value="followers_500" data-price="110">Followers - 500 (Rs 110)</option>
+                    <option value="followers_1000" data-price="250">Followers - 1000 (Rs 150)</option>
+                    <option value="followers_10000" data-price="900">Followers - 10000 (Rs 900)</option>
                     <option value="views_100" data-price="10">Views - 100 (Rs 10)</option>
                     <option value="views_500" data-price="30">Views - 500 (Rs 30)</option>
                     <option value="views_1000" data-price="50">Views - 1000 (Rs 50)</option>
+                    <option value="views_10000" data-price="150">Views - 10000 (Rs 150)</option>
+                    <option value="views_1M" data-price="500">Views - 1M (Rs 500)</option>
                 </select>
             </div>
             <div class="form-group">
